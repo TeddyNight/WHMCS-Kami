@@ -67,8 +67,6 @@ function kami_output($vars) {
     <input type="submit" name="button" id="button" value="生成" />
   </p>
 </form>' ;
-#mysql_connect("localhost","admin_vps","Vps22842218");
-#mysql_select_db("admin_vps");
 if ($_GET["action"]=="sc"){
 echo "Get Card Successful.<br>";
 $sl=$_POST["sl"];
