@@ -24,8 +24,13 @@ function kami_config() {
 function kami_activate() {
 
     # Create Custom DB Table
-    #$query = "CREATE TABLE `mod_addonexample` (`id` INT( 1 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,`demo` TEXT NOT NULL )";
-    #$result = full_query($query);
+    $query = "CREATE TABLE `kami` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `card` text NOT NULL,
+  `credit` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;";
+    $result = full_query($query);
 
     # Return Result
     return array('status'=>'success','description'=>'插件激活成功。');
@@ -37,7 +42,7 @@ function kami_activate() {
 function kami_deactivate() {
 
     # Remove Custom DB Table
-    #$query = "DROP TABLE `mod_addonexample`";
+    $query = "DROP TABLE `kami`";
     #$result = full_query($query);
 
     # Return Result
