@@ -42,7 +42,7 @@ function kami_activate() {
 function kami_deactivate() {
 
     # Remove Custom DB Table
-    $query = "DROP TABLE `kami`";
+    $query = "DROP TABLE `kami`;";
     #$result = full_query($query);
 
     # Return Result
