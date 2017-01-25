@@ -43,7 +43,7 @@ function kami_deactivate() {
 
     # Remove Custom DB Table
     $query = "DROP TABLE `kami`;";
-    #$result = full_query($query);
+    $result = full_query($query);
 
     # Return Result
     return array('status'=>'success','description'=>'插件停用成功。');
